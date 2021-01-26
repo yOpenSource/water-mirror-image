@@ -17,12 +17,22 @@ h1{
 	border : 0.5px solid lightblue;
 	outline : none;
 }
+#input-container{
+	font-size : 2em;
+
+}
+#warning{
+	color:red;
+}
 .water-image-text{
+	margin-top : 1em;
 	font-size : 4.5em;
 	border : 0.5px solid lightblue;
-	height : 2em;
+	min-height : 2em;
 	border-radius : 3em;
 }
-#input-container{
-	font-size : 2em
+@keyframes show-warning{
+	0%{color: white}
+	50%{color:red}
+	100%{color:white}
 }
