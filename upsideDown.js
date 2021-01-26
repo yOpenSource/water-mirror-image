@@ -1,4 +1,6 @@
-name = "my name is yogesh"
+var name = document.getElementById("input").value
+
+//name = "my name is yogesh"
 output = ""
 
 for(var i=0;i < name.length; i++){
@@ -89,4 +91,4 @@ for(var i=0;i < name.length; i++){
 	}   
 
 }
-console.log(output)
+document.getElementById("output").innerHTML = output
