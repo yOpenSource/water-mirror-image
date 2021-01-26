@@ -1,6 +1,16 @@
-var name = document.getElementById("input").value
+var inputElement= document.getElementById("input")
+var outputElement= document.getElementById("output")
 
-output = ""
+inputElement.onfocus = function(){
+	outputElement.innerHTML=""
+		inputElement.value=""	
+}
+
+inputElement.onkeypress = function(event){
+
+var name = inputElement.value + "" + event.key
+
+var output = ""
 
 for(var i=0;i < name.length; i++){
 
@@ -92,4 +102,7 @@ for(var i=0;i < name.length; i++){
 	}   
 
 }
-document.getElementById("output").innerHTML = output
+
+
+document.getElementById("output").innerHTML = output.split("").reverse().join("")
+}
