@@ -7,7 +7,7 @@ inputElement.onfocus = function(){
 	inputElement.value=""	
 }
 
-inputElement.onkeypress = function(event){
+inputElement.onkeydown = function(event){
 	var name = inputElement.value + "" + event.key
 	var output = ""
 	for(var i=0;i < name.length; i++){
