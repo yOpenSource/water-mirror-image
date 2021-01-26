@@ -8,7 +8,11 @@ inputElement.onfocus = function(){
 }
 
 inputElement.onkeydown = function(event){
-	var name = inputElement.value + "" + event.key
+	var eventKey = event.key + ""
+	if(eventKey.length != 1){
+		eventKey=""
+	}
+	var name = inputElement.value + "" + eventKey
 	var output = ""
 	for(var i=0;i < name.length; i++){
 		switch(name[i]){
