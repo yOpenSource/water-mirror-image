@@ -1,11 +1,12 @@
 var name = document.getElementById("input").value
 
-//name = "my name is yogesh"
 output = ""
 
 for(var i=0;i < name.length; i++){
-        switch(name[i]){
-			case 'a':
+
+	switch(name[i]){
+	
+		case 'a':
 						output+=("\u0250");
 						break;
 			case 'b':
