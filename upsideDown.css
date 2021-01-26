@@ -36,3 +36,7 @@ h1{
 	50%{color:red}
 	100%{color:white}
 }
+	
+.note div{
+	font-style : italic;
+}
