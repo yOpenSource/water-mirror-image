@@ -1,6 +1,7 @@
 var inputElement= document.getElementById("input")
 var outputElement= document.getElementById("output")
 var warningElement=document.getElementById("warning")
+var copyButton = document.getElementById("copy-button")
 
 inputElement.onfocus = function(){
 	outputElement.innerHTML=""
@@ -109,4 +110,13 @@ inputElement.onkeydown = function(event){
 	}
 
 	document.getElementById("output").innerHTML = output.split("").reverse().join("")
+}
+
+copyButton.onclick = function(){
+	var el = document.createElement('textarea');
+  	el.value = document.getElementById("output").innerHTML;
+  	document.body.appendChild(el);
+  	el.select();
+  	document.execCommand('copy');
+  	document.body.removeChild(el);
 }
